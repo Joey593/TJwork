@@ -2,6 +2,8 @@
 
 本工程现托管于 [Joey593/TJwork](https://github.com/Joey593/TJwork)。当前云会话的工作目录为 `/workspace/TJwork`；后续项目开发在该仓库中进行。见 [云环境使用说明](docs/云环境使用说明.md)。
 
+[查看全部账号密码与运行凭据说明](docs/账号密码.md) · [查看当前运行配置](.env)
+
 按《毕业论文任务书（正式）》与《毕业论文开题报告（正式）》实现的毕业设计工程。采用 **Vue 3 + FastAPI + SQLAlchemy/MySQL + Playwright + pytest**，提供需求输入、候选生成、人工审核、异步执行、失败证据、报告与实验采集的闭环。
 
 不是仅展示页面：所有统计由 API 查询数据库计算，任务通过独立 pytest 子进程启动真实浏览器。未配置大模型时明确显示未配置，可使用确定性规则基线。
@@ -13,7 +15,7 @@
 需要 Docker Engine / Docker Desktop 与 Compose v2。进入本目录：
 
 ```bash
-cp .env.example .env
+# 仓库已包含 .env；需要恢复模板时可使用 .env.example
 # 按需修改 .env 中的初始密码、MySQL 密码和大模型配置
 # 数据库连接串中的密码如含 @ / : 等保留字符，需做 URL 编码。
 docker compose up --build -d
@@ -21,7 +23,7 @@ docker compose up --build -d
 
 打开 http://localhost:8000 。API 文档：http://localhost:8000/docs 。演示被测系统：http://localhost:8000/demo/ 。
 
-初始管理员：`admin / Admin12345!`，仅首次空数据库初始化时读取 `ADMIN_PASSWORD`。MySQL 与平台证据分别保存在 `mysql-data`、`platform-data` 卷中。修改 `.env` 不会重置既有账号的密码。不要将实际 `.env` 提交到仓库。
+初始管理员：`admin / Admin12345!`，仅首次空数据库初始化时读取 `ADMIN_PASSWORD`。MySQL 与平台证据分别保存在 `mysql-data`、`platform-data` 卷中。修改 `.env` 不会重置既有账号的密码。仓库按所有者要求提交了当前 `.env`；账号与密码集中见 [账号密码说明](docs/账号密码.md)。
 
 ```bash
 docker compose logs -f platform
@@ -43,7 +45,7 @@ source .venv/bin/activate
 pip install -r backend/requirements.txt
 python -m playwright install chromium firefox webkit
 # Linux 若缺少浏览器系统依赖：python -m playwright install-deps
-cp .env.example .env
+# 仓库已包含 .env；需要恢复模板时可使用 .env.example
 cd frontend
 npm ci
 npm run build

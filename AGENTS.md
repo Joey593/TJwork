@@ -8,8 +8,10 @@ this project happen in the TJwork GitHub checkout.
   `/workspace/TJwork`; use the actual checkout root if another session clones it
   elsewhere. `/workspace/work/aurora-test` is a compatibility symlink here.
 - Keep source, documentation, workflows and reproducible experiment evidence in
-  Git. Keep `.env`, database contents, JWT secrets, browser downloads, dependency
-  directories and temporary caches untracked.
+  Git. The owner explicitly confirmed that this repository remains public and
+  authorized committing this project's runtime credentials. The root `.env` is
+  versioned under that instruction. Keep database contents, browser downloads,
+  dependency directories and temporary caches untracked.
 - Preserve the Vue 3 / FastAPI / MySQL / Playwright / pytest architecture.
 - AI-generated cases require schema validation and explicit human review before
   platform execution. Editing an approved case must invalidate its approval.
