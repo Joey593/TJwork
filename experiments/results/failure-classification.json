@@ -1,0 +1,182 @@
+[
+  {
+    "method": "rules",
+    "state": "completed",
+    "dataset": "experiments/failure_dataset.json",
+    "note": "默认数据是8条人工标注的机制验证夹具，不能代表生产分类效果",
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "rows": [
+      {
+        "id": "F01",
+        "label": "assertion",
+        "source": "curated fixture, not runtime",
+        "error": "AssertionError: Expected text to be '注册成功', received '请输入有效邮箱'",
+        "prediction": "assertion",
+        "analysis": {
+          "category": "assertion",
+          "candidate_cause": "核对需求预期、测试数据和页面实际结果；保留断言前后的状态。",
+          "confidence": "规则匹配，仅为候选原因",
+          "evidence": "AssertionError: Expected text to be '注册成功', received '请输入有效邮箱'",
+          "method": "rules",
+          "model": "failure-rules-v1",
+          "prompt_version": "failure-v1.0",
+          "duration_ms": 0,
+          "input_hash": "1ca8482d440e5382d47a083bffb927fb69902231fd3e0d808469833b83187175",
+          "raw_response": "{\"category\": \"assertion\", \"candidate_cause\": \"核对需求预期、测试数据和页面实际结果；保留断言前后的状态。\", \"confidence\": \"规则匹配，仅为候选原因\", \"evidence\": \"AssertionError: Expected text to be '注册成功', received '请输入有效邮箱'\"}",
+          "disclaimer": "候选原因，需人工结合证据复核"
+        }
+      },
+      {
+        "id": "F02",
+        "label": "assertion",
+        "source": "curated fixture, not runtime",
+        "error": "AssertionError: Locator expected to have text welcome; Actual value: error",
+        "prediction": "assertion",
+        "analysis": {
+          "category": "assertion",
+          "candidate_cause": "核对需求预期、测试数据和页面实际结果；保留断言前后的状态。",
+          "confidence": "规则匹配，仅为候选原因",
+          "evidence": "AssertionError: Locator expected to have text welcome; Actual value: error",
+          "method": "rules",
+          "model": "failure-rules-v1",
+          "prompt_version": "failure-v1.0",
+          "duration_ms": 0,
+          "input_hash": "f018a024012bfc6e0e79f13ef2bcfc6fe76e8fda3e6c733f590319e2aafd5068",
+          "raw_response": "{\"category\": \"assertion\", \"candidate_cause\": \"核对需求预期、测试数据和页面实际结果；保留断言前后的状态。\", \"confidence\": \"规则匹配，仅为候选原因\", \"evidence\": \"AssertionError: Locator expected to have text welcome; Actual value: error\"}",
+          "disclaimer": "候选原因，需人工结合证据复核"
+        }
+      },
+      {
+        "id": "F03",
+        "label": "locator",
+        "source": "curated fixture, not runtime",
+        "error": "TimeoutError: waiting for locator('#obsolete-button') to be visible",
+        "prediction": "locator",
+        "analysis": {
+          "category": "locator",
+          "candidate_cause": "检查元素语义、可见性和唯一性；优先使用角色、标签或 test-id。",
+          "confidence": "规则匹配，仅为候选原因",
+          "evidence": "TimeoutError: waiting for locator('#obsolete-button') to be visible",
+          "method": "rules",
+          "model": "failure-rules-v1",
+          "prompt_version": "failure-v1.0",
+          "duration_ms": 0,
+          "input_hash": "5302bd300551d016b8c7b386e20deb67817ff08a21e4ffb4777932f1a438f406",
+          "raw_response": "{\"category\": \"locator\", \"candidate_cause\": \"检查元素语义、可见性和唯一性；优先使用角色、标签或 test-id。\", \"confidence\": \"规则匹配，仅为候选原因\", \"evidence\": \"TimeoutError: waiting for locator('#obsolete-button') to be visible\"}",
+          "disclaimer": "候选原因，需人工结合证据复核"
+        }
+      },
+      {
+        "id": "F04",
+        "label": "locator",
+        "source": "curated fixture, not runtime",
+        "error": "Error: strict mode violation: get_by_role('button', name='提交') resolved to 2 elements",
+        "prediction": "locator",
+        "analysis": {
+          "category": "locator",
+          "candidate_cause": "检查元素语义、可见性和唯一性；优先使用角色、标签或 test-id。",
+          "confidence": "规则匹配，仅为候选原因",
+          "evidence": "Error: strict mode violation: get_by_role('button', name='提交') resolved to 2 elements",
+          "method": "rules",
+          "model": "failure-rules-v1",
+          "prompt_version": "failure-v1.0",
+          "duration_ms": 0,
+          "input_hash": "a7ec85c7791dc9a632424f13118fc7aa471730afa39872aa0afe558afedbc328",
+          "raw_response": "{\"category\": \"locator\", \"candidate_cause\": \"检查元素语义、可见性和唯一性；优先使用角色、标签或 test-id。\", \"confidence\": \"规则匹配，仅为候选原因\", \"evidence\": \"Error: strict mode violation: get_by_role('button', name='提交') resolved to 2 elements\"}",
+          "disclaimer": "候选原因，需人工结合证据复核"
+        }
+      },
+      {
+        "id": "F05",
+        "label": "timeout",
+        "source": "curated fixture, not runtime",
+        "error": "TimeoutError: Page.goto: Timeout 30000ms exceeded while navigating to target",
+        "prediction": "timeout",
+        "analysis": {
+          "category": "timeout",
+          "candidate_cause": "检查网络、页面就绪条件和自动等待日志，避免直接增加固定 sleep。",
+          "confidence": "规则匹配，仅为候选原因",
+          "evidence": "TimeoutError: Page.goto: Timeout 30000ms exceeded while navigating to target",
+          "method": "rules",
+          "model": "failure-rules-v1",
+          "prompt_version": "failure-v1.0",
+          "duration_ms": 0,
+          "input_hash": "b6fb89b46f1780b3635c4149e740984ca229b01e2e82044fbaf97a52e9e55a25",
+          "raw_response": "{\"category\": \"timeout\", \"candidate_cause\": \"检查网络、页面就绪条件和自动等待日志，避免直接增加固定 sleep。\", \"confidence\": \"规则匹配，仅为候选原因\", \"evidence\": \"TimeoutError: Page.goto: Timeout 30000ms exceeded while navigating to target\"}",
+          "disclaimer": "候选原因，需人工结合证据复核"
+        }
+      },
+      {
+        "id": "F06",
+        "label": "timeout",
+        "source": "curated fixture, not runtime",
+        "error": "TimeoutError: Page.wait_for_load_state: Timeout 30000ms exceeded",
+        "prediction": "timeout",
+        "analysis": {
+          "category": "timeout",
+          "candidate_cause": "检查网络、页面就绪条件和自动等待日志，避免直接增加固定 sleep。",
+          "confidence": "规则匹配，仅为候选原因",
+          "evidence": "TimeoutError: Page.wait_for_load_state: Timeout 30000ms exceeded",
+          "method": "rules",
+          "model": "failure-rules-v1",
+          "prompt_version": "failure-v1.0",
+          "duration_ms": 0,
+          "input_hash": "bc46f81eb4a570d8aca1872801fab4e510508f03598c6ca3d1721c5417abaa81",
+          "raw_response": "{\"category\": \"timeout\", \"candidate_cause\": \"检查网络、页面就绪条件和自动等待日志，避免直接增加固定 sleep。\", \"confidence\": \"规则匹配，仅为候选原因\", \"evidence\": \"TimeoutError: Page.wait_for_load_state: Timeout 30000ms exceeded\"}",
+          "disclaimer": "候选原因，需人工结合证据复核"
+        }
+      },
+      {
+        "id": "F07",
+        "label": "infrastructure",
+        "source": "curated fixture, not runtime",
+        "error": "BrowserType.launch: Executable doesn't exist at /browser/chrome",
+        "prediction": "infrastructure",
+        "analysis": {
+          "category": "infrastructure",
+          "candidate_cause": "检查浏览器安装、被测服务地址、依赖和执行器日志。",
+          "confidence": "规则匹配，仅为候选原因",
+          "evidence": "BrowserType.launch: Executable doesn't exist at /browser/chrome",
+          "method": "rules",
+          "model": "failure-rules-v1",
+          "prompt_version": "failure-v1.0",
+          "duration_ms": 0,
+          "input_hash": "a9320db594b7c0f780559b661653f5afe00e49d5665959ed0fff99b929684ba0",
+          "raw_response": "{\"category\": \"infrastructure\", \"candidate_cause\": \"检查浏览器安装、被测服务地址、依赖和执行器日志。\", \"confidence\": \"规则匹配，仅为候选原因\", \"evidence\": \"BrowserType.launch: Executable doesn't exist at /browser/chrome\"}",
+          "disclaimer": "候选原因，需人工结合证据复核"
+        }
+      },
+      {
+        "id": "F08",
+        "label": "infrastructure",
+        "source": "curated fixture, not runtime",
+        "error": "Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:9999/",
+        "prediction": "infrastructure",
+        "analysis": {
+          "category": "infrastructure",
+          "candidate_cause": "检查浏览器安装、被测服务地址、依赖和执行器日志。",
+          "confidence": "规则匹配，仅为候选原因",
+          "evidence": "Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:9999/",
+          "method": "rules",
+          "model": "failure-rules-v1",
+          "prompt_version": "failure-v1.0",
+          "duration_ms": 0,
+          "input_hash": "0af936048f2cda542443b63ec5c2e6ad6d499072316ddd1915c51fb3ea111b83",
+          "raw_response": "{\"category\": \"infrastructure\", \"candidate_cause\": \"检查浏览器安装、被测服务地址、依赖和执行器日志。\", \"confidence\": \"规则匹配，仅为候选原因\", \"evidence\": \"Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:9999/\"}",
+          "disclaimer": "候选原因，需人工结合证据复核"
+        }
+      }
+    ]
+  },
+  {
+    "method": "direct_llm",
+    "state": "not_run",
+    "reason": "LLM_API_KEY not configured"
+  },
+  {
+    "method": "constrained_llm",
+    "state": "not_run",
+    "reason": "LLM_API_KEY not configured"
+  }
+]

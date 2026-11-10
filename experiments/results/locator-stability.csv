@@ -1,0 +1,121 @@
+method,iteration,controlled_dom_mutation,passed,duration_ms,error
+css,1,False,True,820,
+css,2,True,False,966,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator("".legacy-login-button"")
+"
+css,3,False,True,694,
+css,4,True,False,1216,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator("".legacy-login-button"")
+"
+css,5,False,True,602,
+css,6,True,False,1228,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator("".legacy-login-button"")
+"
+css,7,False,True,546,
+css,8,True,False,998,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator("".legacy-login-button"")
+"
+css,9,False,True,784,
+css,10,True,False,1006,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator("".legacy-login-button"")
+"
+css,11,False,True,645,
+css,12,True,False,1149,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator("".legacy-login-button"")
+"
+css,13,False,True,427,
+css,14,True,False,1188,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator("".legacy-login-button"")
+"
+css,15,False,True,613,
+css,16,True,False,1050,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator("".legacy-login-button"")
+"
+css,17,False,True,661,
+css,18,True,False,1002,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator("".legacy-login-button"")
+"
+css,19,False,True,367,
+css,20,True,False,978,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator("".legacy-login-button"")
+"
+xpath,1,False,True,600,
+xpath,2,True,False,990,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator(""//*[@id=\""legacy-submit\""]"")
+"
+xpath,3,False,True,506,
+xpath,4,True,False,1186,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator(""//*[@id=\""legacy-submit\""]"")
+"
+xpath,5,False,True,527,
+xpath,6,True,False,1140,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator(""//*[@id=\""legacy-submit\""]"")
+"
+xpath,7,False,True,511,
+xpath,8,True,False,1007,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator(""//*[@id=\""legacy-submit\""]"")
+"
+xpath,9,False,True,330,
+xpath,10,True,False,1053,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator(""//*[@id=\""legacy-submit\""]"")
+"
+xpath,11,False,True,525,
+xpath,12,True,False,1054,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator(""//*[@id=\""legacy-submit\""]"")
+"
+xpath,13,False,True,568,
+xpath,14,True,False,920,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator(""//*[@id=\""legacy-submit\""]"")
+"
+xpath,15,False,True,521,
+xpath,16,True,False,1022,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator(""//*[@id=\""legacy-submit\""]"")
+"
+xpath,17,False,True,489,
+xpath,18,True,False,1017,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator(""//*[@id=\""legacy-submit\""]"")
+"
+xpath,19,False,True,543,
+xpath,20,True,False,943,"Locator.click: Timeout 600ms exceeded.
+Call log:
+  - waiting for locator(""//*[@id=\""legacy-submit\""]"")
+"
+semantic,1,False,True,455,
+semantic,2,True,True,313,
+semantic,3,False,True,250,
+semantic,4,True,True,263,
+semantic,5,False,True,332,
+semantic,6,True,True,407,
+semantic,7,False,True,702,
+semantic,8,True,True,315,
+semantic,9,False,True,311,
+semantic,10,True,True,330,
+semantic,11,False,True,306,
+semantic,12,True,True,328,
+semantic,13,False,True,244,
+semantic,14,True,True,309,
+semantic,15,False,True,285,
+semantic,16,True,True,397,
+semantic,17,False,True,298,
+semantic,18,True,True,383,
+semantic,19,False,True,722,
+semantic,20,True,True,273,

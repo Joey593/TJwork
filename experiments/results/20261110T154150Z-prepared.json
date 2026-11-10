@@ -1,0 +1,1530 @@
+{
+  "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+  "cases": [
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-01 · 有效账号成功登录",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "username": "student",
+          "password": "Study123!"
+        },
+        "expected_result": "欢迎回来，student",
+        "priority": "P1",
+        "scenario": "login",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "用户名",
+              "name": null
+            },
+            "value": "student"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "密码",
+              "name": null
+            },
+            "value": "Study123!"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "登录"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "login-result",
+              "name": null
+            },
+            "value": "欢迎回来，student"
+          }
+        ]
+      },
+      "id": "7fe818cf935f48c88a47621f528cd6b4",
+      "created_at": "2026-11-10T15:41:50.034+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-02 · 有效邮箱注册成功",
+        "requirement_points": [
+          "ACC-REGISTER"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "email": "student1@example.com"
+        },
+        "expected_result": "注册成功",
+        "priority": "P1",
+        "scenario": "register",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "注册邮箱",
+              "name": null
+            },
+            "value": "student1@example.com"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "注册"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "register-result",
+              "name": null
+            },
+            "value": "注册成功"
+          }
+        ]
+      },
+      "id": "ec87ad23174a4074957a7e6016cab770",
+      "created_at": "2026-11-10T15:41:50.039+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-03 · 按关键词查询课程",
+        "requirement_points": [
+          "ACC-SEARCH"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "query": "Playwright 2"
+        },
+        "expected_result": "Playwright 实战",
+        "priority": "P1",
+        "scenario": "search",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "搜索关键词",
+              "name": null
+            },
+            "value": "Playwright 2"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "查询"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "search-result",
+              "name": null
+            },
+            "value": "Playwright 实战"
+          }
+        ]
+      },
+      "id": "4f4bdb3bef404358b8467dbae818f272",
+      "created_at": "2026-11-10T15:41:50.042+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-04 · 有效反馈提交成功",
+        "requirement_points": [
+          "ACC-FORM"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "message": "反馈样本 3"
+        },
+        "expected_result": "提交成功",
+        "priority": "P1",
+        "scenario": "form",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "反馈内容",
+              "name": null
+            },
+            "value": "反馈样本 3"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "提交反馈"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "form-result",
+              "name": null
+            },
+            "value": "提交成功"
+          }
+        ]
+      },
+      "id": "a28c39091f4944bd9b6eaeb45c176d9e",
+      "created_at": "2026-11-10T15:41:50.046+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-05 · 错误密码被拒绝",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "username": "student",
+          "password": "bad-password-4"
+        },
+        "expected_result": "用户名或密码错误",
+        "priority": "P1",
+        "scenario": "login",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "用户名",
+              "name": null
+            },
+            "value": "student"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "密码",
+              "name": null
+            },
+            "value": "bad-password-4"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "登录"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "login-result",
+              "name": null
+            },
+            "value": "用户名或密码错误"
+          }
+        ]
+      },
+      "id": "53f42a5e637c478a9f1102eb8c453172",
+      "created_at": "2026-11-10T15:41:50.049+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-06 · 注册邮箱格式校验",
+        "requirement_points": [
+          "ACC-REGISTER"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "email": "invalid-5"
+        },
+        "expected_result": "请输入有效邮箱",
+        "priority": "P1",
+        "scenario": "register",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "注册邮箱",
+              "name": null
+            },
+            "value": "invalid-5"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "注册"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "register-result",
+              "name": null
+            },
+            "value": "请输入有效邮箱"
+          }
+        ]
+      },
+      "id": "0f12405d0c694dc8a67bae9912c42f58",
+      "created_at": "2026-11-10T15:41:50.052+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-07 · 无匹配结果提示",
+        "requirement_points": [
+          "ACC-SEARCH"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "query": "不存在课程-6"
+        },
+        "expected_result": "未找到结果",
+        "priority": "P1",
+        "scenario": "search",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "搜索关键词",
+              "name": null
+            },
+            "value": "不存在课程-6"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "查询"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "search-result",
+              "name": null
+            },
+            "value": "未找到结果"
+          }
+        ]
+      },
+      "id": "4937c5574c4b4fdc9ab2c46f0acd5b27",
+      "created_at": "2026-11-10T15:41:50.055+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-08 · 空表单禁止提交",
+        "requirement_points": [
+          "ACC-FORM"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "message": "  "
+        },
+        "expected_result": "请填写反馈内容",
+        "priority": "P1",
+        "scenario": "form",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "反馈内容",
+              "name": null
+            },
+            "value": ""
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "提交反馈"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "form-result",
+              "name": null
+            },
+            "value": "请填写反馈内容"
+          }
+        ]
+      },
+      "id": "ce8e83c3b857478b8fbcc11dad502d50",
+      "created_at": "2026-11-10T15:41:50.060+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-09 · 有效账号成功登录",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "username": "student",
+          "password": "Study123!"
+        },
+        "expected_result": "欢迎回来，student",
+        "priority": "P1",
+        "scenario": "login",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "test_id",
+              "value": "login-username",
+              "name": null
+            },
+            "value": "student"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "密码",
+              "name": null
+            },
+            "value": "Study123!"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "登录"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "login-result",
+              "name": null
+            },
+            "value": "欢迎回来，student"
+          }
+        ]
+      },
+      "id": "9903728e04b84354b63973db7c6f55ed",
+      "created_at": "2026-11-10T15:41:50.063+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-10 · 有效邮箱注册成功",
+        "requirement_points": [
+          "ACC-REGISTER"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "email": "student9@example.com"
+        },
+        "expected_result": "注册成功",
+        "priority": "P1",
+        "scenario": "register",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "注册邮箱",
+              "name": null
+            },
+            "value": "student9@example.com"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "注册"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "register-result",
+              "name": null
+            },
+            "value": "注册成功"
+          }
+        ]
+      },
+      "id": "21a1d399df084d1fb03e8017039752a8",
+      "created_at": "2026-11-10T15:41:50.066+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-11 · 按关键词查询课程",
+        "requirement_points": [
+          "ACC-SEARCH"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "query": "Playwright 10"
+        },
+        "expected_result": "Playwright 实战",
+        "priority": "P1",
+        "scenario": "search",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "搜索关键词",
+              "name": null
+            },
+            "value": "Playwright 10"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "查询"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "search-result",
+              "name": null
+            },
+            "value": "Playwright 实战"
+          }
+        ]
+      },
+      "id": "9a8a05057a2c41eaa7e2ad84cb0bc338",
+      "created_at": "2026-11-10T15:41:50.071+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-12 · 有效反馈提交成功",
+        "requirement_points": [
+          "ACC-FORM"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "message": "反馈样本 11"
+        },
+        "expected_result": "提交成功",
+        "priority": "P1",
+        "scenario": "form",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "反馈内容",
+              "name": null
+            },
+            "value": "反馈样本 11"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "提交反馈"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "form-result",
+              "name": null
+            },
+            "value": "提交成功"
+          }
+        ]
+      },
+      "id": "ec1f9b09d24b4b7993eb299eb1fbded6",
+      "created_at": "2026-11-10T15:41:50.074+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-13 · 错误密码被拒绝",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "username": "student",
+          "password": "bad-password-12"
+        },
+        "expected_result": "用户名或密码错误",
+        "priority": "P1",
+        "scenario": "login",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "用户名",
+              "name": null
+            },
+            "value": "student"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "密码",
+              "name": null
+            },
+            "value": "bad-password-12"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "登录"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "login-result",
+              "name": null
+            },
+            "value": "用户名或密码错误"
+          }
+        ]
+      },
+      "id": "e1cc5a7783fd4efabeb46927a0ce41de",
+      "created_at": "2026-11-10T15:41:50.076+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-14 · 注册邮箱格式校验",
+        "requirement_points": [
+          "ACC-REGISTER"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "email": "invalid-13"
+        },
+        "expected_result": "请输入有效邮箱",
+        "priority": "P1",
+        "scenario": "register",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "注册邮箱",
+              "name": null
+            },
+            "value": "invalid-13"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "注册"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "register-result",
+              "name": null
+            },
+            "value": "请输入有效邮箱"
+          }
+        ]
+      },
+      "id": "1968e11a0b0945418dec9c87c8c54e38",
+      "created_at": "2026-11-10T15:41:50.080+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-15 · 无匹配结果提示",
+        "requirement_points": [
+          "ACC-SEARCH"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "query": "不存在课程-14"
+        },
+        "expected_result": "未找到结果",
+        "priority": "P1",
+        "scenario": "search",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "搜索关键词",
+              "name": null
+            },
+            "value": "不存在课程-14"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "查询"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "search-result",
+              "name": null
+            },
+            "value": "未找到结果"
+          }
+        ]
+      },
+      "id": "6f266a3884ea46e0b4b0fc3318d7c40f",
+      "created_at": "2026-11-10T15:41:50.083+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-16 · 空表单禁止提交",
+        "requirement_points": [
+          "ACC-FORM"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "message": "    "
+        },
+        "expected_result": "请填写反馈内容",
+        "priority": "P1",
+        "scenario": "form",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "反馈内容",
+              "name": null
+            },
+            "value": ""
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "提交反馈"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "form-result",
+              "name": null
+            },
+            "value": "请填写反馈内容"
+          }
+        ]
+      },
+      "id": "2cc55d1b4cd343d1b28883eb86114453",
+      "created_at": "2026-11-10T15:41:50.092+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-17 · 有效账号成功登录",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "username": "student",
+          "password": "Study123!"
+        },
+        "expected_result": "欢迎回来，student",
+        "priority": "P1",
+        "scenario": "login",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "test_id",
+              "value": "login-username",
+              "name": null
+            },
+            "value": "student"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "密码",
+              "name": null
+            },
+            "value": "Study123!"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "登录"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "login-result",
+              "name": null
+            },
+            "value": "欢迎回来，student"
+          }
+        ]
+      },
+      "id": "c19275202b7742da892530f5befad9c6",
+      "created_at": "2026-11-10T15:41:50.096+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-18 · 有效邮箱注册成功",
+        "requirement_points": [
+          "ACC-REGISTER"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "email": "student17@example.com"
+        },
+        "expected_result": "注册成功",
+        "priority": "P1",
+        "scenario": "register",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "注册邮箱",
+              "name": null
+            },
+            "value": "student17@example.com"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "注册"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "register-result",
+              "name": null
+            },
+            "value": "注册成功"
+          }
+        ]
+      },
+      "id": "9919c8774c53467a820a19c4276071ef",
+      "created_at": "2026-11-10T15:41:50.099+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-19 · 按关键词查询课程",
+        "requirement_points": [
+          "ACC-SEARCH"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "query": "Playwright 18"
+        },
+        "expected_result": "Playwright 实战",
+        "priority": "P1",
+        "scenario": "search",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "搜索关键词",
+              "name": null
+            },
+            "value": "Playwright 18"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "查询"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "search-result",
+              "name": null
+            },
+            "value": "Playwright 实战"
+          }
+        ]
+      },
+      "id": "5f0d0beeb21649f3aa3d193b95391657",
+      "created_at": "2026-11-10T15:41:50.101+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "验收-20 · 有效反馈提交成功",
+        "requirement_points": [
+          "ACC-FORM"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "message": "反馈样本 19"
+        },
+        "expected_result": "提交成功",
+        "priority": "P1",
+        "scenario": "form",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "反馈内容",
+              "name": null
+            },
+            "value": "反馈样本 19"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "提交反馈"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "form-result",
+              "name": null
+            },
+            "value": "提交成功"
+          }
+        ]
+      },
+      "id": "4e71d6ac2b864a19868ed607a08eec6b",
+      "created_at": "2026-11-10T15:41:50.104+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "缺陷检出-login",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "username": "student",
+          "password": "wrong"
+        },
+        "expected_result": "用户名或密码错误",
+        "priority": "P1",
+        "scenario": "login",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/?bug=login"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "用户名",
+              "name": null
+            },
+            "value": "student"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "密码",
+              "name": null
+            },
+            "value": "wrong"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "登录"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "login-result",
+              "name": null
+            },
+            "value": "用户名或密码错误"
+          }
+        ]
+      },
+      "id": "6e484740bce0440a89f8a7e4c9f3e1b2",
+      "created_at": "2026-11-10T15:41:50.107+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "缺陷检出-register",
+        "requirement_points": [
+          "ACC-REGISTER"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "email": "invalid-email"
+        },
+        "expected_result": "请输入有效邮箱",
+        "priority": "P1",
+        "scenario": "register",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/?bug=register"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "注册邮箱",
+              "name": null
+            },
+            "value": "invalid-email"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "注册"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "register-result",
+              "name": null
+            },
+            "value": "请输入有效邮箱"
+          }
+        ]
+      },
+      "id": "485654cfe7a94c1a85acaa7378991cc1",
+      "created_at": "2026-11-10T15:41:50.109+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "缺陷检出-search",
+        "requirement_points": [
+          "ACC-SEARCH"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "query": "Playwright"
+        },
+        "expected_result": "Playwright 实战",
+        "priority": "P1",
+        "scenario": "search",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/?bug=search"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "搜索关键词",
+              "name": null
+            },
+            "value": "Playwright"
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "查询"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "search-result",
+              "name": null
+            },
+            "value": "Playwright 实战"
+          }
+        ]
+      },
+      "id": "dbca5b60371d4b23a7297e0498bba2a6",
+      "created_at": "2026-11-10T15:41:50.112+00:00"
+    },
+    {
+      "project_id": "86800b79e24d407e9cebcee7de79f31d",
+      "requirement_id": "5d20d95733b644f48ad99cb28dec3e99",
+      "generation_id": null,
+      "status": "pending",
+      "version": 1,
+      "body": {
+        "title": "缺陷检出-form",
+        "requirement_points": [
+          "ACC-FORM"
+        ],
+        "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+        "steps": [
+          "访问演示站点",
+          "输入测试数据",
+          "提交并校验提示"
+        ],
+        "test_data": {
+          "message": ""
+        },
+        "expected_result": "请填写反馈内容",
+        "priority": "P1",
+        "scenario": "form",
+        "script": [
+          {
+            "action": "goto",
+            "locator": null,
+            "value": "/demo/?bug=form"
+          },
+          {
+            "action": "fill",
+            "locator": {
+              "by": "label",
+              "value": "反馈内容",
+              "name": null
+            },
+            "value": ""
+          },
+          {
+            "action": "click",
+            "locator": {
+              "by": "role",
+              "value": "button",
+              "name": "提交反馈"
+            },
+            "value": ""
+          },
+          {
+            "action": "expect_text",
+            "locator": {
+              "by": "test_id",
+              "value": "form-result",
+              "name": null
+            },
+            "value": "请填写反馈内容"
+          }
+        ]
+      },
+      "id": "a9c63c7c53a5450b8546b8632232215c",
+      "created_at": "2026-11-10T15:41:50.115+00:00"
+    }
+  ],
+  "review": "pending; explicitly review before execution"
+}

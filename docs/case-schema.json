@@ -1,0 +1,173 @@
+{
+  "$defs": {
+    "Locator": {
+      "additionalProperties": false,
+      "properties": {
+        "by": {
+          "enum": [
+            "role",
+            "label",
+            "text",
+            "test_id",
+            "css",
+            "xpath"
+          ],
+          "title": "By",
+          "type": "string"
+        },
+        "value": {
+          "maxLength": 500,
+          "minLength": 1,
+          "title": "Value",
+          "type": "string"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Name"
+        }
+      },
+      "required": [
+        "by",
+        "value"
+      ],
+      "title": "Locator",
+      "type": "object"
+    },
+    "Step": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "goto",
+            "fill",
+            "click",
+            "check",
+            "select",
+            "expect_text",
+            "expect_visible",
+            "expect_url"
+          ],
+          "title": "Action",
+          "type": "string"
+        },
+        "locator": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Locator"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "value": {
+          "default": "",
+          "maxLength": 2000,
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "action"
+      ],
+      "title": "Step",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "requirement_points": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 100,
+      "minItems": 1,
+      "title": "Requirement Points",
+      "type": "array"
+    },
+    "preconditions": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Preconditions",
+      "type": "string"
+    },
+    "steps": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 50,
+      "minItems": 1,
+      "title": "Steps",
+      "type": "array"
+    },
+    "test_data": {
+      "additionalProperties": true,
+      "title": "Test Data",
+      "type": "object"
+    },
+    "expected_result": {
+      "maxLength": 3000,
+      "minLength": 1,
+      "title": "Expected Result",
+      "type": "string"
+    },
+    "priority": {
+      "default": "P1",
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "title": "Priority",
+      "type": "string"
+    },
+    "scenario": {
+      "default": "custom",
+      "enum": [
+        "login",
+        "register",
+        "search",
+        "form",
+        "custom"
+      ],
+      "title": "Scenario",
+      "type": "string"
+    },
+    "script": {
+      "items": {
+        "$ref": "#/$defs/Step"
+      },
+      "maxItems": 60,
+      "minItems": 2,
+      "title": "Script",
+      "type": "array"
+    }
+  },
+  "required": [
+    "title",
+    "requirement_points",
+    "preconditions",
+    "steps",
+    "expected_result",
+    "script"
+  ],
+  "title": "CaseBody",
+  "type": "object"
+}

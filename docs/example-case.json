@@ -1,0 +1,58 @@
+{
+  "title": "有效账号成功登录",
+  "requirement_points": [
+    "REQ-001"
+  ],
+  "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+  "steps": [
+    "访问演示站点",
+    "输入测试数据",
+    "提交并校验提示"
+  ],
+  "test_data": {
+    "username": "student",
+    "password": "Study123!"
+  },
+  "expected_result": "欢迎回来，student",
+  "priority": "P1",
+  "scenario": "login",
+  "script": [
+    {
+      "action": "goto",
+      "value": "/demo/"
+    },
+    {
+      "action": "fill",
+      "value": "student",
+      "locator": {
+        "by": "label",
+        "value": "用户名"
+      }
+    },
+    {
+      "action": "fill",
+      "value": "Study123!",
+      "locator": {
+        "by": "label",
+        "value": "密码"
+      }
+    },
+    {
+      "action": "click",
+      "value": "",
+      "locator": {
+        "by": "role",
+        "value": "button",
+        "name": "登录"
+      }
+    },
+    {
+      "action": "expect_text",
+      "value": "欢迎回来，student",
+      "locator": {
+        "by": "test_id",
+        "value": "login-result"
+      }
+    }
+  ]
+}

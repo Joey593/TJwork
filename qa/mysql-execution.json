@@ -1,0 +1,148 @@
+{
+  "database": "mysql8.4",
+  "create_api_ms": 10.269,
+  "run": {
+    "project_id": "8248cf0a57c445069396756206bf1f12",
+    "actor_id": "e9eebdd9cc124c54a8a6cb23a10070e1",
+    "name": "MySQL 真实执行与持久化验证",
+    "status": "passed",
+    "browser": "chromium",
+    "repeat": 1,
+    "snapshot": {
+      "items": [
+        {
+          "body": {
+            "steps": [
+              "访问演示站点",
+              "输入测试数据",
+              "提交并校验提示"
+            ],
+            "title": "空表单禁止提交",
+            "script": [
+              {
+                "value": "/demo/",
+                "action": "goto"
+              },
+              {
+                "value": "",
+                "action": "fill",
+                "locator": {
+                  "by": "label",
+                  "value": "反馈内容"
+                }
+              },
+              {
+                "value": "",
+                "action": "click",
+                "locator": {
+                  "by": "role",
+                  "name": "提交反馈",
+                  "value": "button"
+                }
+              },
+              {
+                "value": "请填写反馈内容",
+                "action": "expect_text",
+                "locator": {
+                  "by": "test_id",
+                  "value": "form-result"
+                }
+              }
+            ],
+            "priority": "P1",
+            "scenario": "form",
+            "test_data": {
+              "message": ""
+            },
+            "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+            "expected_result": "请填写反馈内容",
+            "requirement_points": [
+              "REQ-004"
+            ]
+          },
+          "case_id": "8ccca177fd124790bca7a3e7b7f89f94",
+          "ordinal": 1,
+          "version": 2,
+          "repetition": 1
+        }
+      ],
+      "base_url": "http://127.0.0.1:8000"
+    },
+    "summary": {
+      "junit": "junit.xml",
+      "total": 1,
+      "failed": 0,
+      "passed": 1,
+      "skipped": 0,
+      "completed": 1,
+      "exit_code": 0,
+      "runner_log": "pytest.log",
+      "duration_ms": 564
+    },
+    "started_at": "2026-11-10T15:46:38.774+00:00",
+    "finished_at": "2026-11-10T15:46:41.266+00:00",
+    "id": "be2c94de9c734a76b6c8e84c7be6569d",
+    "created_at": "2026-11-10T15:46:38.619+00:00",
+    "results": [
+      {
+        "run_id": "be2c94de9c734a76b6c8e84c7be6569d",
+        "case_id": "8ccca177fd124790bca7a3e7b7f89f94",
+        "ordinal": 1,
+        "status": "passed",
+        "duration_ms": 564,
+        "evidence": {
+          "error": "",
+          "steps": [
+            {
+              "index": 1,
+              "action": "goto",
+              "status": "passed",
+              "locator": null,
+              "duration_ms": 208
+            },
+            {
+              "index": 2,
+              "action": "fill",
+              "status": "passed",
+              "locator": {
+                "by": "label",
+                "value": "反馈内容"
+              },
+              "duration_ms": 174
+            },
+            {
+              "index": 3,
+              "action": "click",
+              "status": "passed",
+              "locator": {
+                "by": "role",
+                "name": "提交反馈",
+                "value": "button"
+              },
+              "duration_ms": 118
+            },
+            {
+              "index": 4,
+              "action": "expect_text",
+              "status": "passed",
+              "locator": {
+                "by": "test_id",
+                "value": "form-result"
+              },
+              "duration_ms": 16
+            }
+          ],
+          "title": "空表单禁止提交",
+          "trace": "0001.trace.zip",
+          "case_version": 2,
+          "requirement_points": [
+            "REQ-004"
+          ]
+        },
+        "analysis": null,
+        "id": "327028ce3ea44060af40e532ea114eef",
+        "created_at": "2026-11-10T15:46:41.261+00:00"
+      }
+    ]
+  }
+}

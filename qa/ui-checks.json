@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "navigation:需求管理",
+    "navigation:测试用例",
+    "navigation:AI 用例生成",
+    "navigation:测试任务",
+    "navigation:报告与追踪",
+    "navigation:对比实验",
+    "navigation:平台设置",
+    "navigation:工作概览",
+    "generation:real rules API",
+    "manual review:approved",
+    "UI task:create + browser passed",
+    "report:authenticated HTML download",
+    "failure:rules analysis + screenshot download",
+    "mobile:390px no document overflow"
+  ],
+  "page_errors": []
+}

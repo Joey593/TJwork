@@ -1,0 +1,45 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: aurora
+      MYSQL_USER: aurora
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-change-this-password}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-change-root-password}
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u root -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    restart: unless-stopped
+  platform:
+    build: .
+    init: true
+    shm_size: 1gb
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: mysql+pymysql://aurora:${MYSQL_PASSWORD:-change-this-password}@mysql:3306/aurora?charset=utf8mb4
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-Admin12345!}
+      JWT_SECRET: ${JWT_SECRET:-}
+      DEMO_BASE_URL: http://127.0.0.1:8000
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_BASE_URL: ${LLM_BASE_URL:-https://api.openai.com/v1}
+      LLM_MODEL: ${LLM_MODEL:-gpt-4o-mini}
+      CORS_ORIGINS: http://localhost:8000,http://127.0.0.1:8000
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - platform-data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+volumes:
+  mysql-data:
+  platform-data:

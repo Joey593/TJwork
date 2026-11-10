@@ -1,0 +1,1770 @@
+{
+  "project_id": "86800b79e24d407e9cebcee7de79f31d",
+  "actor_id": "ce2ec05b8c34492aa98fb8954f8141ff",
+  "name": "任务取消状态验证",
+  "status": "cancelled",
+  "browser": "chromium",
+  "repeat": 20,
+  "snapshot": {
+    "base_url": "http://127.0.0.1:8000",
+    "items": [
+      {
+        "ordinal": 1,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 1
+      },
+      {
+        "ordinal": 2,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 2
+      },
+      {
+        "ordinal": 3,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 3
+      },
+      {
+        "ordinal": 4,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 4
+      },
+      {
+        "ordinal": 5,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 5
+      },
+      {
+        "ordinal": 6,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 6
+      },
+      {
+        "ordinal": 7,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 7
+      },
+      {
+        "ordinal": 8,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 8
+      },
+      {
+        "ordinal": 9,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 9
+      },
+      {
+        "ordinal": 10,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 10
+      },
+      {
+        "ordinal": 11,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 11
+      },
+      {
+        "ordinal": 12,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 12
+      },
+      {
+        "ordinal": 13,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 13
+      },
+      {
+        "ordinal": 14,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 14
+      },
+      {
+        "ordinal": 15,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 15
+      },
+      {
+        "ordinal": 16,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 16
+      },
+      {
+        "ordinal": 17,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 17
+      },
+      {
+        "ordinal": 18,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 18
+      },
+      {
+        "ordinal": 19,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 19
+      },
+      {
+        "ordinal": 20,
+        "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+        "version": 2,
+        "body": {
+          "title": "验收-01 · 有效账号成功登录",
+          "requirement_points": [
+            "ACC-LOGIN"
+          ],
+          "preconditions": "演示被测站点可访问；每条用例使用独立 Browser Context",
+          "steps": [
+            "访问演示站点",
+            "输入测试数据",
+            "提交并校验提示"
+          ],
+          "test_data": {
+            "username": "student",
+            "password": "Study123!"
+          },
+          "expected_result": "欢迎回来，student",
+          "priority": "P1",
+          "scenario": "login",
+          "script": [
+            {
+              "action": "goto",
+              "locator": null,
+              "value": "/demo/"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "用户名",
+                "name": null
+              },
+              "value": "student"
+            },
+            {
+              "action": "fill",
+              "locator": {
+                "by": "label",
+                "value": "密码",
+                "name": null
+              },
+              "value": "Study123!"
+            },
+            {
+              "action": "click",
+              "locator": {
+                "by": "role",
+                "value": "button",
+                "name": "登录"
+              },
+              "value": ""
+            },
+            {
+              "action": "expect_text",
+              "locator": {
+                "by": "test_id",
+                "value": "login-result",
+                "name": null
+              },
+              "value": "欢迎回来，student"
+            }
+          ]
+        },
+        "repetition": 20
+      }
+    ]
+  },
+  "summary": {
+    "total": 20,
+    "completed": 20,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 20,
+    "duration_ms": 0,
+    "exit_code": -15,
+    "runner_log": "pytest.log",
+    "junit": "junit.xml"
+  },
+  "started_at": "2026-11-10T15:56:24.923+00:00",
+  "finished_at": "2026-11-10T15:56:25.358+00:00",
+  "id": "8394f0d9964f406599b813da9606aa0e",
+  "created_at": "2026-11-10T15:56:24.775+00:00",
+  "results": [
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 1,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "4676905394194211843f4cd77e046681",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 2,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "30b63875b6604edfaa6eef60c935a9bb",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 3,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "9efc16c5d59043709f1478d4f9446fc8",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 4,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "6976135d36554562acb46f1d5a7a1bb7",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 5,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "316be769be7e44449e9b9ed381b2ff70",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 6,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "75aacfa406a145409cbfbd2c2ba7bc90",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 7,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "7d366755f98040b7bc7b4af30f56d487",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 8,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "f0792a48359048899f0a7eba5fa5a604",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 9,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "b431de83243343d0b01943b0a657d645",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 10,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "4a2d34b8e28d4f498734ba157b9768df",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 11,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "aad1d7120651427b8207073505dcc21d",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 12,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "3a818356389a46c7a76b523ef999066b",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 13,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "dfbab560e8b54b2098e154e4b038c024",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 14,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "435a7ed2541f42e18cf243e4db92321f",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 15,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "a22c3fc20fb641bab880025a46c09dc1",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 16,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "be22c280f80747979d1083bcc814cbed",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 17,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "8cc7865088844155b1e6a61ae5f89ec2",
+      "created_at": "2026-11-10T15:56:25.355+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 18,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "6e7b315598fd46849d5952def1b4d300",
+      "created_at": "2026-11-10T15:56:25.356+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 19,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "adcfad5d3ff84a5683b4b1dc3226105d",
+      "created_at": "2026-11-10T15:56:25.356+00:00"
+    },
+    {
+      "run_id": "8394f0d9964f406599b813da9606aa0e",
+      "case_id": "7fe818cf935f48c88a47621f528cd6b4",
+      "ordinal": 20,
+      "status": "skipped",
+      "duration_ms": 0,
+      "evidence": {
+        "title": "验收-01 · 有效账号成功登录",
+        "case_version": 2,
+        "error": "任务被取消",
+        "runner_log": "pytest.log",
+        "requirement_points": [
+          "ACC-LOGIN"
+        ]
+      },
+      "analysis": null,
+      "id": "0215a60a44d74d6096e8074eb9857f4c",
+      "created_at": "2026-11-10T15:56:25.356+00:00"
+    }
+  ]
+}

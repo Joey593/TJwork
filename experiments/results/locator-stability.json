@@ -1,0 +1,20 @@
+{
+  "experiment": "controlled DOM selector mutation, not natural flakiness",
+  "url": "http://127.0.0.1:8000/demo/",
+  "repeats_per_method": 20,
+  "results": {
+    "css": {
+      "passed": 10,
+      "total": 20
+    },
+    "xpath": {
+      "passed": 10,
+      "total": 20
+    },
+    "semantic": {
+      "passed": 20,
+      "total": 20
+    }
+  },
+  "raw_csv": "experiments/results/locator-stability.csv"
+}

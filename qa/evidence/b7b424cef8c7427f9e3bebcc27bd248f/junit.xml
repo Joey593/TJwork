@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="4" time="25.630" timestamp="2026-11-10T15:43:49.247903+00:00" hostname="77b95c57b279"><testcase classname="runner.test_scenarios" name="test_declarative_scenario[0001-a9c63c7c]" time="7.415"><failure message="AssertionError: Locator expected to have text '请填写反馈内容'&#10;Actual value: 提交成功 &#10;Call log:&#10;  - Expect &quot;to_have_text&quot; with timeout 5000ms&#10;  - waiting for get_by_test_id(&quot;form-result&quot;)&#10;    9 × locator resolved to &lt;output data-testid=&quot;form-result&quot;&gt;提交成功&lt;/output&gt;&#10;      - unexpected value &quot;提交成功&quot;">runner/test_scenarios.py:9: in test_declarative_scenario
+    scenario_page.perform(step)
+runner/pom.py:26: in perform
+    elif action=='expect_text': expect(locator).to_have_text(value)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Locator expected to have text '请填写反馈内容'
+E   Actual value: 提交成功 
+E   Call log:
+E     - Expect "to_have_text" with timeout 5000ms
+E     - waiting for get_by_test_id("form-result")
+E       9 × locator resolved to &lt;output data-testid="form-result"&gt;提交成功&lt;/output&gt;
+E         - unexpected value "提交成功"</failure></testcase><testcase classname="runner.test_scenarios" name="test_declarative_scenario[0002-dbca5b60]" time="6.054"><failure message="AssertionError: Locator expected to have text 'Playwright 实战'&#10;Actual value: 未找到结果 &#10;Call log:&#10;  - Expect &quot;to_have_text&quot; with timeout 5000ms&#10;  - waiting for get_by_test_id(&quot;search-result&quot;)&#10;    9 × locator resolved to &lt;output data-testid=&quot;search-result&quot;&gt;未找到结果&lt;/output&gt;&#10;      - unexpected value &quot;未找到结果&quot;">runner/test_scenarios.py:9: in test_declarative_scenario
+    scenario_page.perform(step)
+runner/pom.py:26: in perform
+    elif action=='expect_text': expect(locator).to_have_text(value)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Locator expected to have text 'Playwright 实战'
+E   Actual value: 未找到结果 
+E   Call log:
+E     - Expect "to_have_text" with timeout 5000ms
+E     - waiting for get_by_test_id("search-result")
+E       9 × locator resolved to &lt;output data-testid="search-result"&gt;未找到结果&lt;/output&gt;
+E         - unexpected value "未找到结果"</failure></testcase><testcase classname="runner.test_scenarios" name="test_declarative_scenario[0003-485654cf]" time="5.519"><failure message="AssertionError: Locator expected to have text '请输入有效邮箱'&#10;Actual value: 注册成功 &#10;Call log:&#10;  - Expect &quot;to_have_text&quot; with timeout 5000ms&#10;  - waiting for get_by_test_id(&quot;register-result&quot;)&#10;    9 × locator resolved to &lt;output data-testid=&quot;register-result&quot;&gt;注册成功&lt;/output&gt;&#10;      - unexpected value &quot;注册成功&quot;">runner/test_scenarios.py:9: in test_declarative_scenario
+    started=time.perf_counter()
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+runner/pom.py:26: in perform
+    elif action=='expect_text': expect(locator).to_have_text(value)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Locator expected to have text '请输入有效邮箱'
+E   Actual value: 注册成功 
+E   Call log:
+E     - Expect "to_have_text" with timeout 5000ms
+E     - waiting for get_by_test_id("register-result")
+E       9 × locator resolved to &lt;output data-testid="register-result"&gt;注册成功&lt;/output&gt;
+E         - unexpected value "注册成功"</failure></testcase><testcase classname="runner.test_scenarios" name="test_declarative_scenario[0004-6e484740]" time="5.734"><failure message="AssertionError: Locator expected to have text '用户名或密码错误'&#10;Actual value: 欢迎回来，student &#10;Call log:&#10;  - Expect &quot;to_have_text&quot; with timeout 5000ms&#10;  - waiting for get_by_test_id(&quot;login-result&quot;)&#10;    9 × locator resolved to &lt;output data-testid=&quot;login-result&quot;&gt;欢迎回来，student&lt;/output&gt;&#10;      - unexpected value &quot;欢迎回来，student&quot;">runner/test_scenarios.py:9: in test_declarative_scenario
+    started=time.perf_counter()
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+runner/pom.py:26: in perform
+    elif action=='expect_text': expect(locator).to_have_text(value)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Locator expected to have text '用户名或密码错误'
+E   Actual value: 欢迎回来，student 
+E   Call log:
+E     - Expect "to_have_text" with timeout 5000ms
+E     - waiting for get_by_test_id("login-result")
+E       9 × locator resolved to &lt;output data-testid="login-result"&gt;欢迎回来，student&lt;/output&gt;
+E         - unexpected value "欢迎回来，student"</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,120 @@
+{
+  "timestamp": "20261110T154255Z",
+  "environment": {
+    "backend": "http://127.0.0.1:8000",
+    "browser": "chromium",
+    "database": "sqlite"
+  },
+  "batch": {
+    "distinct_cases": 20,
+    "run_id": "d45d28bd7ac24abab97525822c092e65",
+    "summary": {
+      "total": 20,
+      "completed": 20,
+      "passed": 20,
+      "failed": 0,
+      "skipped": 0,
+      "duration_ms": 14930,
+      "exit_code": 0,
+      "runner_log": "pytest.log",
+      "junit": "junit.xml"
+    },
+    "status": "passed",
+    "create_api_ms": 9.148780000032275
+  },
+  "stability": {
+    "run_id": "e0616aac66aa40bb9805f56a9f95ad50",
+    "repeats": 20,
+    "summary": {
+      "total": 20,
+      "completed": 20,
+      "passed": 20,
+      "failed": 0,
+      "skipped": 0,
+      "duration_ms": 15511,
+      "exit_code": 0,
+      "runner_log": "pytest.log",
+      "junit": "junit.xml"
+    },
+    "observed_failure_rate": 0.0,
+    "create_api_ms": 58.167358999980934,
+    "interpretation": "固定演示环境20次重复；不能证明其他环境的长期稳定性"
+  },
+  "defects": {
+    "run_id": "b7b424cef8c7427f9e3bebcc27bd248f",
+    "summary": {
+      "total": 4,
+      "completed": 4,
+      "passed": 0,
+      "failed": 4,
+      "skipped": 0,
+      "duration_ms": 23137,
+      "exit_code": 1,
+      "runner_log": "pytest.log",
+      "junit": "junit.xml"
+    },
+    "evidence": [
+      {
+        "result_id": "d0d3f60fceb94791a1fec9dc2651b7cf",
+        "status": "failed",
+        "has_error": true,
+        "screenshot": {
+          "filename": "0001.png",
+          "download_status": 200,
+          "bytes": 62584
+        },
+        "trace": {
+          "filename": "0001.trace.zip",
+          "download_status": 200,
+          "bytes": 204838
+        }
+      },
+      {
+        "result_id": "01ffb5feb3264a5c84f182d1d18b407c",
+        "status": "failed",
+        "has_error": true,
+        "screenshot": {
+          "filename": "0002.png",
+          "download_status": 200,
+          "bytes": 64298
+        },
+        "trace": {
+          "filename": "0002.trace.zip",
+          "download_status": 200,
+          "bytes": 186948
+        }
+      },
+      {
+        "result_id": "d4dc8d5a4e454d43a67927c0b5f63105",
+        "status": "failed",
+        "has_error": true,
+        "screenshot": {
+          "filename": "0003.png",
+          "download_status": 200,
+          "bytes": 63552
+        },
+        "trace": {
+          "filename": "0003.trace.zip",
+          "download_status": 200,
+          "bytes": 200216
+        }
+      },
+      {
+        "result_id": "04c74af87023432083353b4c32bf5faa",
+        "status": "failed",
+        "has_error": true,
+        "screenshot": {
+          "filename": "0004.png",
+          "download_status": 200,
+          "bytes": 64287
+        },
+        "trace": {
+          "filename": "0004.trace.zip",
+          "download_status": 200,
+          "bytes": 221745
+        }
+      }
+    ]
+  },
+  "llm_experiment": "not run without configured real model; no effectiveness claims"
+}

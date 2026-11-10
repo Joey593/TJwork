@@ -1,0 +1,63 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+___________________ test_declarative_scenario[0001-a9c63c7c] ___________________
+runner/test_scenarios.py:9: in test_declarative_scenario
+    scenario_page.perform(step)
+runner/pom.py:26: in perform
+    elif action=='expect_text': expect(locator).to_have_text(value)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Locator expected to have text '请填写反馈内容'
+E   Actual value: 提交成功 
+E   Call log:
+E     - Expect "to_have_text" with timeout 5000ms
+E     - waiting for get_by_test_id("form-result")
+E       9 × locator resolved to <output data-testid="form-result">提交成功</output>
+E         - unexpected value "提交成功"
+___________________ test_declarative_scenario[0002-dbca5b60] ___________________
+runner/test_scenarios.py:9: in test_declarative_scenario
+    scenario_page.perform(step)
+runner/pom.py:26: in perform
+    elif action=='expect_text': expect(locator).to_have_text(value)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Locator expected to have text 'Playwright 实战'
+E   Actual value: 未找到结果 
+E   Call log:
+E     - Expect "to_have_text" with timeout 5000ms
+E     - waiting for get_by_test_id("search-result")
+E       9 × locator resolved to <output data-testid="search-result">未找到结果</output>
+E         - unexpected value "未找到结果"
+___________________ test_declarative_scenario[0003-485654cf] ___________________
+runner/test_scenarios.py:9: in test_declarative_scenario
+    started=time.perf_counter()
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+runner/pom.py:26: in perform
+    elif action=='expect_text': expect(locator).to_have_text(value)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Locator expected to have text '请输入有效邮箱'
+E   Actual value: 注册成功 
+E   Call log:
+E     - Expect "to_have_text" with timeout 5000ms
+E     - waiting for get_by_test_id("register-result")
+E       9 × locator resolved to <output data-testid="register-result">注册成功</output>
+E         - unexpected value "注册成功"
+___________________ test_declarative_scenario[0004-6e484740] ___________________
+runner/test_scenarios.py:9: in test_declarative_scenario
+    started=time.perf_counter()
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+runner/pom.py:26: in perform
+    elif action=='expect_text': expect(locator).to_have_text(value)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Locator expected to have text '用户名或密码错误'
+E   Actual value: 欢迎回来，student 
+E   Call log:
+E     - Expect "to_have_text" with timeout 5000ms
+E     - waiting for get_by_test_id("login-result")
+E       9 × locator resolved to <output data-testid="login-result">欢迎回来，student</output>
+E         - unexpected value "欢迎回来，student"
+- generated xml file: /workspace/work/aurora-test/data/artifacts/b7b424cef8c7427f9e3bebcc27bd248f/junit.xml -
+=========================== short test summary info ============================
+FAILED runner/test_scenarios.py::test_declarative_scenario[0001-a9c63c7c] - A...
+FAILED runner/test_scenarios.py::test_declarative_scenario[0002-dbca5b60] - A...
+FAILED runner/test_scenarios.py::test_declarative_scenario[0003-485654cf] - A...
+FAILED runner/test_scenarios.py::test_declarative_scenario[0004-6e484740] - A...
+4 failed in 25.63s

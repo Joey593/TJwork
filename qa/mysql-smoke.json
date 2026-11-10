@@ -1,0 +1,26 @@
+{
+  "config": {
+    "llm_configured": false,
+    "llm_model": "gpt-4o-mini",
+    "database": "mysql",
+    "browsers": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "prompt_version": "case-schema-v1.0"
+  },
+  "project": {
+    "name": "Campus Lab · Web 回归测试",
+    "description": "覆盖账号、课程查询与反馈流程的毕业设计演示项目。8 条种子用例经过人工设计，审核后即可执行。",
+    "base_url": "http://127.0.0.1:8000",
+    "owner_id": "e9eebdd9cc124c54a8a6cb23a10070e1",
+    "id": "8248cf0a57c445069396756206bf1f12",
+    "created_at": "2026-11-10T15:42:01.367+00:00"
+  },
+  "seed_case_count": 8,
+  "enqueue_status": 202,
+  "run_id": "d69ede999b714932a7b1a31a9385d835",
+  "create_api_ms": 77.641,
+  "cancel": "cancelled"
+}

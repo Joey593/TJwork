@@ -1,0 +1,10 @@
+[
+ {"id":"F01","label":"assertion","source":"curated fixture, not runtime","error":"AssertionError: Expected text to be '注册成功', received '请输入有效邮箱'"},
+ {"id":"F02","label":"assertion","source":"curated fixture, not runtime","error":"AssertionError: Locator expected to have text welcome; Actual value: error"},
+ {"id":"F03","label":"locator","source":"curated fixture, not runtime","error":"TimeoutError: waiting for locator('#obsolete-button') to be visible"},
+ {"id":"F04","label":"locator","source":"curated fixture, not runtime","error":"Error: strict mode violation: get_by_role('button', name='提交') resolved to 2 elements"},
+ {"id":"F05","label":"timeout","source":"curated fixture, not runtime","error":"TimeoutError: Page.goto: Timeout 30000ms exceeded while navigating to target"},
+ {"id":"F06","label":"timeout","source":"curated fixture, not runtime","error":"TimeoutError: Page.wait_for_load_state: Timeout 30000ms exceeded"},
+ {"id":"F07","label":"infrastructure","source":"curated fixture, not runtime","error":"BrowserType.launch: Executable doesn't exist at /browser/chrome"},
+ {"id":"F08","label":"infrastructure","source":"curated fixture, not runtime","error":"Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:9999/"}
+]
